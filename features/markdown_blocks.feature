@@ -14,3 +14,10 @@ Feature: Markdown blocks
   Scenario: Don't use a rich text editor for Markdown
     When I go to the new Markdown block form
     Then I should not see "Rich Text"
+
+  Scenario: Markdown blocks get translated into HTML when rendered
+    Given a Markdown block exists with name "My Block" and content "Here is some *Markdown* text."
+    When I view the block's content
+    Then I should see the HTML "Here is some <em>Markdown</em> text" within the content
+    But I should not see "Name:" within the content
+    And I should not see "Content:" within the content

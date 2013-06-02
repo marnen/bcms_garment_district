@@ -1,3 +1,1 @@
-
-<p><b>Name:</b> <%= @content_block.name %></p>
-<p><b>Content:</b> <%= @content_block.content %></p>
+<%= require 'maruku'; Maruku.new(@content_block.content).to_html.html_safe %>
