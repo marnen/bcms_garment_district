@@ -4,7 +4,8 @@ Feature: Markdown blocks
   So that I have a friendlier way of creating content than straight HTML
 
   Background:
-    Given I am logged in as an administrator
+    Given the content types are registered
+    And I am logged in as an administrator
 
   Scenario: Markdown is an available content type
     When I go to the content library
