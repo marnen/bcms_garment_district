@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(:version => 20130602050053) do
   create_table "bcms_garment_district_markdown_block_versions", :force => true do |t|
     t.integer  "original_record_id"
     t.integer  "version"
-    t.string   "name"
-    t.text     "content"
+    t.string   "name",                                  :null => false
+    t.text     "content",                               :null => false
     t.datetime "created_at",                            :null => false
     t.datetime "updated_at",                            :null => false
     t.boolean  "published",          :default => false
@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20130602050053) do
   create_table "bcms_garment_district_markdown_blocks", :force => true do |t|
     t.integer  "version"
     t.integer  "lock_version",  :default => 0
-    t.string   "name"
-    t.text     "content"
+    t.string   "name",                             :null => false
+    t.text     "content",                          :null => false
     t.datetime "created_at",                       :null => false
     t.datetime "updated_at",                       :null => false
     t.boolean  "published",     :default => false
