@@ -1,3 +1,3 @@
-= BcmsGarmentDistrict
+= bcms_garment_district
 
-This project rocks and uses MIT-LICENSE.
+Wanna edit your BrowserCMS content blocks in Markdown instead of HTML? Add this module to your BrowserCMS installation!
