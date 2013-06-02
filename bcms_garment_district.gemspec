@@ -24,7 +24,10 @@ Gem::Specification.new do |s|
  # s.add_dependency "rails", "~> 3.2.13"
   # s.add_dependency "jquery-rails"
 
-  ['sqlite3', 'guard-rspec', 'rspec-rails'].each do |gem|
-    s.add_development_dependency gem
-  end
+  [
+    'sqlite3',
+    'guard-rspec',
+    'rspec-rails',
+    ['rb-fsevent', '~> 0.9.1']
+  ].each {|gem| s.add_development_dependency *gem }
 end
