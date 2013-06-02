@@ -24,10 +24,20 @@ Gem::Specification.new do |s|
  # s.add_dependency "rails", "~> 3.2.13"
   # s.add_dependency "jquery-rails"
 
+  s.add_dependency 'maruku'
+
   [
     'sqlite3',
+    'guard-cucumber',
+    'cucumber-rails',
+    'database_cleaner',
+    'debugger',
+    'factory_girl_rails',
+    'ffaker',
+    'launchy',
     'guard-rspec',
     'rspec-rails',
-    ['rb-fsevent', '~> 0.9.1']
+    ['rb-fsevent', '~> 0.9.1'],
+    ['shoulda-matchers', '~> 2.0.0']
   ].each {|gem| s.add_development_dependency *gem }
 end
