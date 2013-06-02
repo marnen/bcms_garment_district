@@ -6,7 +6,7 @@ module BcmsGarmentDistrict
     validates_presence_of :name, :content
 
     def to_html
-      Maruku.new(content).to_html
+      Maruku.new(content).to_html.html_safe
     end
   end
 end

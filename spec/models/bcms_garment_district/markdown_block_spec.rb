@@ -17,6 +17,10 @@ module BcmsGarmentDistrict
         block = FactoryGirl.create :markdown_block, :content => content
         block.to_html.should == Maruku.new(content).to_html
       end
+
+      it 'should be marked as html_safe so that we can pass the HTML to the view' do
+        FactoryGirl.create(:markdown_block).to_html.should be_html_safe
+      end
     end
   end
 end
