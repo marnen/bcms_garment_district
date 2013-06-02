@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     'sqlite3',
     'guard-cucumber',
     'cucumber-rails',
+    'database_cleaner',
     'guard-rspec',
     'rspec-rails',
     ['rb-fsevent', '~> 0.9.1'],

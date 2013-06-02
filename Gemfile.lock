@@ -73,6 +73,7 @@ GEM
       capybara (>= 1.1.2)
       cucumber (>= 1.1.8)
       nokogiri (>= 1.5.0)
+    database_cleaner (0.9.1)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     ffi (1.8.1)
@@ -208,6 +209,7 @@ PLATFORMS
 DEPENDENCIES
   bcms_garment_district!
   cucumber-rails
+  database_cleaner
   guard-cucumber
   guard-rspec
   jquery-rails
