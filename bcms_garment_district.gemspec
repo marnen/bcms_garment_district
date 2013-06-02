@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
 
   [
     'sqlite3',
+    'capybara-webkit',
     'guard-cucumber',
     'cucumber-rails',
     'database_cleaner',
