@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.summary     = description
   s.description = description
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["GPL.txt", "LICENSE.txt", "COPYRIGHT.txt", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["GPL.txt", "LICENSE.txt", "COPYRIGHT.txt", "Rakefile", "README.md"]
     s.files -= Dir['lib/tasks/module_tasks.rake']
   s.test_files = Dir["test/**/*"]
 
