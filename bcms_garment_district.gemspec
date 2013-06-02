@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = BcmsGarmentDistrict::VERSION
   s.authors     = ["Marnen Laibow-Koser"]
   s.email       = ["marnen@marnen.org"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/marnen/bcms_garment_district"
   description = 'Allow Markdown and Textile to be used for BrowserCMS content.'
   s.summary     = description
   s.description = description
