@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     'guard-cucumber',
     'cucumber-rails',
     'database_cleaner',
+    'debugger',
     'factory_girl_rails',
     'ffaker',
     'guard-rspec',
