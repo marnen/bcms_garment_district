@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     'guard-cucumber',
     'cucumber-rails',
     'database_cleaner',
+    'factory_girl_rails',
     'guard-rspec',
     'rspec-rails',
     ['rb-fsevent', '~> 0.9.1'],

@@ -76,6 +76,11 @@ GEM
     database_cleaner (0.9.1)
     diff-lcs (1.2.4)
     erubis (2.7.0)
+    factory_girl (4.1.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.1.0)
+      factory_girl (~> 4.1.0)
+      railties (>= 3.0.0)
     ffi (1.8.1)
     formatador (0.2.4)
     gherkin (2.11.5)
@@ -210,6 +215,7 @@ DEPENDENCIES
   bcms_garment_district!
   cucumber-rails
   database_cleaner
+  factory_girl_rails
   guard-cucumber
   guard-rspec
   jquery-rails
