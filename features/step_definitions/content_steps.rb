@@ -1,5 +1,5 @@
 When /^I go to the content library$/ do
-  visit cms.content_library_path
+  visit content_library_path
 end
 
 Then /^I should see "(.*?)" as an available content type$/ do |content_type|
