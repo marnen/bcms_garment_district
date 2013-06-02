@@ -1,4 +1,4 @@
-= bcms_garment_district
+# bcms_garment_district
 
 Wanna edit your BrowserCMS content blocks in Markdown instead of HTML? Add this module to your BrowserCMS installation!
 
