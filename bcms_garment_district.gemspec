@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     'sqlite3',
     'guard-rspec',
     'rspec-rails',
-    ['rb-fsevent', '~> 0.9.1']
+    ['rb-fsevent', '~> 0.9.1'],
+    ['shoulda-matchers', '~> 2.0.0']
   ].each {|gem| s.add_development_dependency *gem }
 end
