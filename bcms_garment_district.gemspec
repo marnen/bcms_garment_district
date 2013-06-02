@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     'debugger',
     'factory_girl_rails',
     'ffaker',
+    'launchy',
     'guard-rspec',
     'rspec-rails',
     ['rb-fsevent', '~> 0.9.1'],
