@@ -2,6 +2,16 @@ When /^I go to the root in edit mode$/ do
   visit '/?mode=edit'
 end
 
+When /^I press "(.*?)"$/ do |text|
+  click_button text
+end
+
+When /^I fill in the following:$/ do |table|
+  table.rows_hash.each do |field, value|
+    fill_in field, :with => value
+  end
+end
+
 Then /^I should see the HTML "(.*?)"$/ do |html|
   page.html.should include html
 end
