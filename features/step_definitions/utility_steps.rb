@@ -17,7 +17,7 @@ Then /^I should see the HTML "(.*?)"$/ do |html|
 end
 
 Then /^I should not see "(.*?)"$/ do |text|
-  page.should_not have_content text
+  page.should have_no_content text
 end
 
 Then /^(.*?) within the content/ do |step_text|
