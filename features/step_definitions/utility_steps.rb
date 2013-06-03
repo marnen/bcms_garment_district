@@ -13,7 +13,9 @@ When /^I fill in the following:$/ do |table|
 end
 
 Then /^I should see the HTML "(.*?)"$/ do |html|
-  page.html.should include html
+  wait_until do
+    page.html.should include html
+  end
 end
 
 Then /^I should not see "(.*?)"$/ do |text|
