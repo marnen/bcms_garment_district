@@ -1,2 +1,9 @@
 <%= f.cms_text_field :name %>
 <%= f.cms_text_area :content %>
+<%= lt_button_wrapper button_tag 'Preview', :name => :preview, :value => true, :url => preview_path %>
+<div id='markdown_preview'></div>
+
+<%- content_for :html_head do %>
+  <%= stylesheet_link_tag 'bcms_garment_district/markdown_blocks' %>
+  <%= javascript_include_tag 'bcms_garment_district/markdown_blocks' %>
+<% end %>
