@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
 
   [
     'sqlite3',
+    'capybara-firebug',
     'capybara-webkit',
     'guard-cucumber',
     'cucumber-rails',
