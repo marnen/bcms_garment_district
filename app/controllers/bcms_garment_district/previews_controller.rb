@@ -6,8 +6,7 @@ module BcmsGarmentDistrict
     layout :if_not_xhr
 
     def create
-      @content_block = MarkdownBlock.new params[:markdown_block]
-      render :template => 'bcms_garment_district/markdown_blocks/render'
+      @markdown = MarkdownBlock.new params[:markdown_block]
     end
 
     private
